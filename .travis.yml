@@ -1,0 +1,13 @@
+language: c
+compiler:
+    - gcc
+    - clang
+script: gcc -Wall -Werror test.c
+
+notifications:
+    webhooks: http://barosl.com:54856/travis
+
+branches:
+    only:
+        - auto
+        - try
